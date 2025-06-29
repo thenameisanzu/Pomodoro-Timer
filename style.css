@@ -4,10 +4,15 @@
   box-sizing: border-box;
 }
 
+
+
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f7f7f7;
-  color: #333;
+  font-family:"Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  background-color:#ECEDB0;
+  color: black;
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -16,9 +21,9 @@ body {
 }
 
 .container {
-  background-color: #fff;
+  background-image: linear-gradient(#97B067,#437057);
   padding: 40px;
-  border-radius: 15px;
+  border-radius: 10px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   text-align: center;
   max-width: 400px;
@@ -39,24 +44,29 @@ h1 {
 .buttons {
   display: flex;
   justify-content: center;
-  gap: 15px;
+  gap: 30px;
   flex-wrap: wrap;
+  
+  
 }
 
 button {
-  padding: 10px 20px;
+  padding: 5px 5px;
   border: none;
-  border-radius: 25px;
+  border-radius: 5px;
   cursor: pointer;
   font-size: 1rem;
-  background-color: #23ce6b;
+  background-color: floralwhite;
   color: white;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-  min-width: 90px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  min-width: 50px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  
+  
 }
 
 button:hover {
-  background-color: #48a9a6;
+  background-color: #DDEB9D;
   transform: scale(1.05);
 }
 
