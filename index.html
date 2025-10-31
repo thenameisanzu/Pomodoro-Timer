@@ -4,23 +4,40 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Pomodoro Timer</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- CSS -->
   <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Lexend+Deca:wght@100..900&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
 </head>
+
 <body>
+  <main class="container" role="main" aria-label="Pomodoro Timer">
+    <header>
+      <h1>Pomodoro Timer</h1>
+      <p class="subtitle">Focus • Rest • Repeat</p>
+    </header>
 
-  <div class="container">
-    <h1>Pomodoro Timer</h1>
-    <div class="timer" id="timer">25:00</div>
+    <section class="timer-section">
+      <div class="timer" id="timer" aria-live="polite">25:00</div>
+    </section>
 
-    <div class="buttons">
-      <button id="start">▶️</button>
-      <button id="pause">⏸️</button>
-      <button id="reset">🔄</button>
-    </div>
-  </div>
+    <section class="buttons" aria-label="Timer Controls">
+      <button id="start" class="btn primary" aria-label="Start Timer">▶️ Start</button>
+      <button id="pause" class="btn secondary" aria-label="Pause Timer">⏸️ Pause</button>
+      <button id="reset" class="btn tertiary" aria-label="Reset Timer">🔄 Reset</button>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Made with ❤️ using Material You style</p>
+  </footer>
 
   <script src="./script.js"></script>
 </body>
