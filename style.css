@@ -7,7 +7,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background-color: #F3F4E8; /* soft pastel surface */
+  background-color: #F3F4E8;
   color: #1B1B1B;
   min-height: 100vh;
   display: flex;
@@ -16,7 +16,7 @@ body {
   padding: 20px;
 }
 
-/* ===== Container (Surface) ===== */
+/* ===== Container ===== */
 .container {
   background-color: #ffffff;
   padding: 40px;
@@ -27,7 +27,7 @@ body {
   text-align: center;
   max-width: 420px;
   width: 100%;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: all 0.6s ease;
 }
 
 .container:hover {
@@ -42,10 +42,10 @@ h1 {
   margin-bottom: 20px;
   font-size: 2rem;
   font-weight: 600;
-  color: #2E7D32; /* Material green */
+  color: #2E7D32;
 }
 
-/* ===== Timer Display ===== */
+/* ===== Timer ===== */
 .timer {
   font-size: 4rem;
   font-weight: 700;
@@ -68,7 +68,7 @@ button {
   cursor: pointer;
   font-size: 1rem;
   font-weight: 500;
-  background-color: #81C784; /* M3 Primary container green */
+  background-color: #81C784;
   color: #ffffff;
   box-shadow:
     0 2px 4px rgba(0, 0, 0, 0.15),
@@ -77,12 +77,12 @@ button {
 }
 
 button:hover {
-  background-color: #66BB6A; /* hover tone */
+  background-color: #66BB6A;
   transform: scale(1.05);
 }
 
 button:active {
-  background-color: #4CAF50; /* pressed tone */
+  background-color: #4CAF50;
   transform: scale(0.98);
 }
 
@@ -100,4 +100,48 @@ button:active {
     font-size: 0.9rem;
     padding: 10px 16px;
   }
+}
+
+/* ===== Dynamic Theme Modes ===== */
+.work-mode {
+  background-color: #ffffff;
+}
+
+.break-mode {
+  background-color: #E3F2FD; /* light blue for breaks */
+}
+
+/* Timer color variations */
+.work-mode .timer {
+  color: #2E7D32;
+}
+
+.break-mode .timer {
+  color: #1565C0;
+}
+
+/* Header color variations */
+.work-mode h1 {
+  color: #2E7D32;
+}
+
+.break-mode h1 {
+  color: #1565C0;
+}
+
+/* Button color variations */
+.work-mode button {
+  background-color: #81C784;
+}
+
+.break-mode button {
+  background-color: #64B5F6;
+}
+
+.break-mode button:hover {
+  background-color: #42A5F5;
+}
+
+.break-mode button:active {
+  background-color: #1E88E5;
 }
