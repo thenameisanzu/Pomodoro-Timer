@@ -81,10 +81,29 @@ function startWork() {
   startTimer();
 }
 
+function toggleTimer(){
+  if (isRunning){
+    pauseTimer();
+  } else
+    startTimer();
+
+}
+
+document.addEventListener("keydown", (event) =>{
+  if (event.key === " "){
+
+    event.preventDefault();
+
+    toggleTimer();
+  }
+});
+
 startBtn.addEventListener("click", startTimer);
 pauseBtn.addEventListener("click", pauseTimer);
 resetBtn.addEventListener("click", resetTimer);
 breakBtn.addEventListener("click", startBreak);
+
+
 
 updateDisplay();
 container.classList.add("work-mode");
